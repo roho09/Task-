@@ -1,71 +1,80 @@
-# Getting Started with Create React App
+# LinkedIn Connect All Chrome Extension  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Chrome Extension automates sending connection requests on LinkedIn's "Grow Your Network" page. The extension is built using the **wxt.dev framework** and **React**, providing a seamless user experience for connecting with multiple profiles.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features  
+- Adds a floating button labeled **"Connect with All"** to the LinkedIn "Grow Your Network" page.  
+- Automatically clicks all visible "Connect" buttons on the page.  
+- Introduces a randomized delay (1-3 seconds) between each connection request to avoid detection or account blocking.  
+- Handles edge cases, such as no connectable profiles.  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used  
+- **wxt.dev Framework**: Simplified Chrome Extension development.  
+- **React**: Dynamic UI rendering for the floating button.  
+- **JavaScript**: DOM manipulation and event handling for automation.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Installation  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites  
+- **Node.js** installed on your system.  
+- Basic knowledge of Chrome Extensions.  
 
-### `npm run build`
+### Steps  
+1. Clone the repository:  
+   ```bash  
+   git clone <repository-url>  
+   cd linkedin-extension  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build the extension:
 
-### `npm run eject`
+    npm run build  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Load the extension in Chrome:
+        Open Chrome and go to chrome://extensions.
+        Enable Developer Mode.
+        Click Load Unpacked and select the dist folder.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Open LinkedIn and navigate to:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    https://www.linkedin.com/mynetwork/grow/  
 
-## Learn More
+    Look for the floating "Connect with All" button on the bottom-right corner of the page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Click the button to send connection requests to all visible profiles.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    A delay of 1-3 seconds is applied between requests for safety.
 
-### Code Splitting
+Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+(Add screenshots of the floating button and the extension in action here.)
+Demo
 
-### Analyzing the Bundle Size
+    Video: Link to the demo video
+    Packaged Extension: Download ZIP
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Future Enhancements
 
-### Making a Progressive Web App
+    Add customization options for the delay duration.
+    Include filters to select specific profiles for connection requests.
+    Improve error handling for dynamic LinkedIn updates.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+    License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Task-
+Replace placeholders like `<repository-url>`, `#` for links, and "Add screenshots" with actual content as applicable. Let me know if you'd like further refinements!
