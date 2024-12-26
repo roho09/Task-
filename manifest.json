@@ -1,18 +1,26 @@
 {
-  "manifest_version": 3,
-  "name": "LinkedIn Auto Connect",
-  "version": "1.0",
-  "description": "Automates sending connection requests on LinkedIn",
+  "manifest_version": 3, // Specifies that this is a Chrome Extension using Manifest V3 (latest version).
+  "name": "LinkedIn Auto Connect", // The name of your extension as it will appear in the Chrome Web Store.
+  "version": "1.0", // The version number of your extension.
+  "description": "Automates sending connection requests on LinkedIn", // A short description of what your extension does.
+
+  // Defines content scripts that run on specific web pages.
   "content_scripts": [
     {
-      "matches": ["https://www.linkedin.com/mynetwork/*"],
-      "js": ["content.js"]
+      "matches": ["https://www.linkedin.com/mynetwork/*"], // Specifies the LinkedIn pages where the script will run.
+      "js": ["content.js"] // The JavaScript file to inject into the matching pages.
     }
   ],
+
+  // Specifies the background service worker for handling background tasks.
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js" // The background script file that runs in the background.
   },
 
-  "host_permissions": ["https://www.linkedin.com/*"],
-  "permissions": ["scripting", "activeTab"]
+  // Permissions for accessing specific domains and using certain APIs.
+  "host_permissions": ["https://www.linkedin.com/*"], // Grants access to all LinkedIn pages.
+  "permissions": [
+    "scripting", // Allows injecting and executing scripts on web pages.
+    "activeTab" // Grants access to the currently active tab.
+  ]
 }
