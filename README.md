@@ -67,7 +67,7 @@ AFTER EXTENSION-----
 Demo
 
     Video: Link to the demo video - https://go.screenpal.com/watch/cZlO1dneQWU
-    Packaged Extension: Download ZIP -  https://drive.google.com/file/d/13lI9yw7GS-_y5SlcLvAduGQvnRUOo8kz/view?usp=sharing
+    Packaged Extension: Download ZIP - https://drive.google.com/file/d/13lI9yw7GS-_y5SlcLvAduGQvnRUOo8kz/view?usp=sharing
 
 
     Future Enhancements
